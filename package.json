@@ -1,0 +1,24 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VishalHarindrakumar/YelpCamp.git"
+  },
+  "author": "Vishal H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VishalHarindrakumar/YelpCamp/issues"
+  },
+  "homepage": "https://github.com/VishalHarindrakumar/YelpCamp#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1"
+  }
+}
