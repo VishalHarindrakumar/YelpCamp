@@ -8,8 +8,12 @@
 <body>
     <h1><%=foundCamp.title%></h1>
     <h2>Location: <%=foundCamp.location%></h2>
-    <a href="/campgrounds/<%=foundCamp._id%>/edit">EDIT</a>
 
+
+    <a href="/campgrounds/<%=foundCamp._id%>/edit">EDIT</a>
+    <form action="/campgrounds/<%=foundCamp._id%>?_method=DELETE" method="POST">
+        <button>DELETE</button>
+    </form>
     <a href="/campgrounds">HOME</a>
 
     

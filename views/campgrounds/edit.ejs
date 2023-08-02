@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing: <%=foundCamp.title  %></title>
+</head>
+<body>
+    <form action="/campgrounds/<%=foundCamp._id%>?_method=PUT" method="POST">
+        <label for="title">Title</label>
+        <input id="title" name="campground[title]" type="text" value="<%=foundCamp.title %>">
+        
+        <label for="loc">Location</label>
+        <input id="loc" name="campground[location]" type="text" value="<%=foundCamp.location %>">
+
+        <button>UPDATE</button>
+        
+
+    </form>
+    <a href="/campgrounds">HOME</a>
+    
+</body>
+</html>
