@@ -1,13 +1,40 @@
 <% layout('layouts/boilerplate') %>
-    <form action="/campgrounds" method="POST">
-        <label for="title">Title</label>
-        <input id="title" name="campground[title]" type="text">
-        
-        <label for="loc">Location</label>
-        <input id="loc" name="campground[location]" type="text">
+<div class="row">
+    <h1 class="text-center">New Campground</h1>
+    <div class="col-6 offset-3">
+        <form action="/campgrounds" method="POST">
+            <div class="form-group mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" id="title" name="campground[title]" type="text">
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" for="loc">Location</label>
+                <input class="form-control" id="loc" name="campground[location]" type="text">
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" for="img">Image Url</label>
+                <input class="form-control" id="img" name="campground[img]" type="text">
+            </div>
+            <div class="mb-3">
+                <label for="price">Campground Price</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="price-label">$</span>
+                    </div>
+                    <input type="text" id="price" name="campground[price]" class="form-control" placeholder="0.00" aria-label="0" aria-describedby="price-label">
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label class="form-label" for="desc">Description</label>
+                <textarea class="form-control" id="desc" name="campground[description]" type="text"></textarea>
+            </div>
+            
+            <button class="btn btn-success">SUBMIT</button>
+        </form>
+        <a href="/campgrounds">All Campgrounds</a>
+    </div>
+</div>
 
-        <button>SUBMIT</button>
-        
 
-    </form>
-    <a href="/campgrounds">HOME</a>
+   
+    
